@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title description">
+  <title id="title">Text Summarizer technology stack</title>
+  <desc id="description">Technology stack cards for Python, FastAPI, Hugging Face Transformers, PyTorch, HTML, CSS, and JavaScript.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7ed"/>
+      <stop offset="1" stop-color="#ffedd5"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fb923c"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#7c2d12" flood-opacity=".10"/>
+    </filter>
+    <style>
+      text { font-family: Inter, "Segoe UI", Arial, sans-serif; }
+      .eyebrow { font-size: 19px; font-weight: 700; letter-spacing: 3px; fill: #c2410c; }
+      .heading { font-size: 60px; font-weight: 750; letter-spacing: -2px; fill: #292524; }
+      .body { font-size: 22px; fill: #78716c; }
+      .card-title { font-size: 25px; font-weight: 700; fill: #292524; }
+      .card-copy { font-size: 18px; fill: #78716c; }
+      .label { font-size: 15px; font-weight: 700; letter-spacing: 1.5px; fill: #c2410c; }
+    </style>
+  </defs>
+
+  <rect width="1080" height="1350" fill="url(#background)"/>
+  <circle cx="1020" cy="80" r="210" fill="#fed7aa" opacity=".38"/>
+  <circle cx="20" cy="1300" r="215" fill="#fdba74" opacity=".20"/>
+  <path d="M0 270C230 185 330 325 530 250S820 185 1080 270" fill="none" stroke="#fff" stroke-width="3" opacity=".75"/>
+
+  <rect x="76" y="78" width="60" height="8" rx="4" fill="url(#accent)"/>
+  <text x="76" y="126" class="eyebrow">BUILT WITH</text>
+  <text x="76" y="212" class="heading">The tech stack</text>
+  <text x="76" y="258" class="body">A lightweight web app powered by modern ML tools.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="76" y="330" width="928" height="590" rx="32" fill="#fff"/>
+  </g>
+  <text x="116" y="385" class="label">BACKEND &amp; MACHINE LEARNING</text>
+
+  <g>
+    <rect x="116" y="414" width="404" height="132" rx="22" fill="#fffaf5" stroke="#fed7aa" stroke-width="2"/>
+    <circle cx="166" cy="480" r="25" fill="#ffedd5"/>
+    <text x="166" y="488" text-anchor="middle" font-size="20" font-weight="800" fill="#c2410c">Py</text>
+    <text x="208" y="468" class="card-title">Python</text>
+    <text x="208" y="500" class="card-copy">Application logic</text>
+  </g>
+  <g>
+    <rect x="560" y="414" width="404" height="132" rx="22" fill="#fffaf5" stroke="#fed7aa" stroke-width="2"/>
+    <circle cx="610" cy="480" r="25" fill="#ffedd5"/>
+    <path d="M598 480h24M610 468v24M602 472l16 16M618 472l-16 16" stroke="#c2410c" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="652" y="468" class="card-title">FastAPI</text>
+    <text x="652" y="500" class="card-copy">Web API backend</text>
+  </g>
+  <g>
+    <rect x="116" y="570" width="404" height="132" rx="22" fill="#fffaf5" stroke="#fed7aa" stroke-width="2"/>
+    <circle cx="166" cy="636" r="25" fill="#ffedd5"/>
+    <path d="M166 617l17 19-17 19-17-19z" fill="none" stroke="#c2410c" stroke-width="3" stroke-linejoin="round"/>
+    <text x="208" y="621" class="card-title">Hugging Face</text>
+    <text x="208" y="652" class="card-copy">Transformers · T5 model</text>
+  </g>
+  <g>
+    <rect x="560" y="570" width="404" height="132" rx="22" fill="#fffaf5" stroke="#fed7aa" stroke-width="2"/>
+    <circle cx="610" cy="636" r="25" fill="#ffedd5"/>
+    <path d="M610 617l17 10v19l-17 10-17-10v-19zM593 627l17 10 17-10M610 637v19" fill="none" stroke="#c2410c" stroke-width="2.5" stroke-linejoin="round"/>
+    <text x="652" y="621" class="card-title">PyTorch</text>
+    <text x="652" y="652" class="card-copy">Model inference</text>
+  </g>
+
+  <text x="116" y="758" class="label">FRONTEND</text>
+  <rect x="116" y="782" width="250" height="92" rx="20" fill="#fff4e8" stroke="#fdba74" stroke-width="2"/>
+  <text x="241" y="823" text-anchor="middle" font-size="23" font-weight="700" fill="#292524">HTML</text>
+  <text x="241" y="851" text-anchor="middle" font-size="16" fill="#78716c">Structure</text>
+  <rect x="415" y="782" width="250" height="92" rx="20" fill="#fff4e8" stroke="#fdba74" stroke-width="2"/>
+  <text x="540" y="823" text-anchor="middle" font-size="23" font-weight="700" fill="#292524">CSS</text>
+  <text x="540" y="851" text-anchor="middle" font-size="16" fill="#78716c">Styling</text>
+  <rect x="714" y="782" width="250" height="92" rx="20" fill="#fff4e8" stroke="#fdba74" stroke-width="2"/>
+  <text x="839" y="823" text-anchor="middle" font-size="23" font-weight="700" fill="#292524">JavaScript</text>
+  <text x="839" y="851" text-anchor="middle" font-size="16" fill="#78716c">Interaction</text>
+
+  <rect x="76" y="974" width="928" height="204" rx="28" fill="url(#accent)"/>
+  <text x="116" y="1030" font-size="17" font-weight="700" letter-spacing="2" fill="#fff7ed">THE RESULT</text>
+  <text x="116" y="1082" font-size="33" font-weight="750" fill="#fff">A simple interface.</text>
+  <text x="116" y="1126" font-size="33" font-weight="750" fill="#fff">A powerful summarization pipeline.</text>
+  <circle cx="917" cy="1075" r="38" fill="#fff" opacity=".18"/>
+  <path d="M902 1076l11 11 21-24" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="76" y="1280" font-size="17" font-weight="600" fill="#a8a29e">TEXT SUMMARIZER  •  TECHNOLOGY STACK</text>
+  <text x="1004" y="1280" text-anchor="end" font-size="17" font-weight="600" fill="#a8a29e">02 / 02</text>
+</svg>

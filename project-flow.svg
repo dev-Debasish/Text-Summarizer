@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title description">
+  <title id="title">How the Text Summarizer works</title>
+  <desc id="description">A four-step diagram showing text input flowing through a FastAPI backend and T5 model to a concise summary.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7ed"/>
+      <stop offset="1" stop-color="#ffedd5"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fb923c"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#7c2d12" flood-opacity=".10"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M1 1L11 6L1 11" fill="none" stroke="#fb923c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      text { font-family: Inter, "Segoe UI", Arial, sans-serif; }
+      .eyebrow { font-size: 19px; font-weight: 700; letter-spacing: 3px; fill: #c2410c; }
+      .heading { font-size: 60px; font-weight: 750; letter-spacing: -2px; fill: #292524; }
+      .body { font-size: 22px; fill: #78716c; }
+      .card-title { font-size: 25px; font-weight: 700; fill: #292524; }
+      .card-copy { font-size: 18px; fill: #78716c; }
+      .step { font-size: 15px; font-weight: 700; letter-spacing: 1.5px; fill: #c2410c; }
+      .icon-line { fill: none; stroke: #f97316; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <rect width="1080" height="1350" fill="url(#background)"/>
+  <circle cx="1000" cy="90" r="205" fill="#fed7aa" opacity=".38"/>
+  <circle cx="30" cy="1280" r="210" fill="#fdba74" opacity=".20"/>
+  <path d="M0 250C190 180 260 320 450 250S760 180 1080 260" fill="none" stroke="#fff" stroke-width="3" opacity=".75"/>
+
+  <rect x="76" y="78" width="60" height="8" rx="4" fill="url(#accent)"/>
+  <text x="76" y="126" class="eyebrow">PROJECT OVERVIEW</text>
+  <text x="76" y="212" class="heading">How it works</text>
+  <text x="76" y="258" class="body">From a block of text to a concise, AI-generated summary.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="76" y="332" width="928" height="720" rx="32" fill="#fff"/>
+  </g>
+
+  <path d="M540 510V592" stroke="#fb923c" stroke-width="3" stroke-dasharray="7 9" marker-end="url(#arrow)"/>
+  <path d="M540 690V772" stroke="#fb923c" stroke-width="3" stroke-dasharray="7 9" marker-end="url(#arrow)"/>
+  <path d="M540 870V952" stroke="#fb923c" stroke-width="3" stroke-dasharray="7 9" marker-end="url(#arrow)"/>
+
+  <g>
+    <rect x="144" y="380" width="792" height="130" rx="22" fill="#fffaf5" stroke="#fed7aa" stroke-width="2"/>
+    <circle cx="211" cy="445" r="34" fill="#ffedd5"/>
+    <path d="M196 428h25l9 9v25h-34zM221 428v10h9M202 445h20M202 453h20" class="icon-line"/>
+    <text x="274" y="425" class="step">01  /  INPUT</text>
+    <text x="274" y="460" class="card-title">Enter your text</text>
+    <text x="274" y="487" class="card-copy">Paste or type content in the browser interface.</text>
+  </g>
+
+  <g>
+    <rect x="144" y="560" width="792" height="130" rx="22" fill="#fffaf5" stroke="#fed7aa" stroke-width="2"/>
+    <circle cx="211" cy="625" r="34" fill="#ffedd5"/>
+    <path d="M194 616h34M194 625h25M194 634h29M202 607l-8 9 8 9" class="icon-line"/>
+    <text x="274" y="605" class="step">02  /  PREPROCESS</text>
+    <text x="274" y="640" class="card-title">Clean and prepare</text>
+    <text x="274" y="667" class="card-copy">Normalize whitespace, remove HTML-like tags, and tokenize.</text>
+  </g>
+
+  <g>
+    <rect x="144" y="740" width="792" height="130" rx="22" fill="#fffaf5" stroke="#fed7aa" stroke-width="2"/>
+    <circle cx="211" cy="805" r="34" fill="#ffedd5"/>
+    <path d="M211 783l20 11v22l-20 11-20-11v-22zM191 794l20 11 20-11M211 805v22" class="icon-line"/>
+    <text x="274" y="785" class="step">03  /  SUMMARIZE</text>
+    <text x="274" y="820" class="card-title">Generate with T5</text>
+    <text x="274" y="847" class="card-copy">A locally loaded Hugging Face model creates the summary.</text>
+  </g>
+
+  <g>
+    <rect x="144" y="920" width="792" height="96" rx="22" fill="#fff4e8" stroke="#fdba74" stroke-width="2"/>
+    <circle cx="211" cy="968" r="30" fill="url(#accent)"/>
+    <path d="M198 968l9 9 18-20" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="274" y="956" class="step">04  /  RESULT</text>
+    <text x="274" y="989" class="card-title">Get your concise summary</text>
+  </g>
+
+  <rect x="76" y="1102" width="928" height="116" rx="24" fill="#292524"/>
+  <text x="112" y="1147" font-size="17" font-weight="700" letter-spacing="2" fill="#fdba74">THE PIPELINE</text>
+  <text x="112" y="1186" font-size="23" font-weight="600" fill="#fff">Browser UI</text>
+  <text x="265" y="1186" font-size="23" font-weight="500" fill="#fb923c">→</text>
+  <text x="303" y="1186" font-size="23" font-weight="600" fill="#fff">FastAPI</text>
+  <text x="421" y="1186" font-size="23" font-weight="500" fill="#fb923c">→</text>
+  <text x="459" y="1186" font-size="23" font-weight="600" fill="#fff">T5 model</text>
+  <text x="598" y="1186" font-size="23" font-weight="500" fill="#fb923c">→</text>
+  <text x="636" y="1186" font-size="23" font-weight="600" fill="#fff">Summary</text>
+  <text x="76" y="1280" font-size="17" font-weight="600" fill="#a8a29e">TEXT SUMMARIZER  •  PROJECT FLOW</text>
+  <text x="1004" y="1280" text-anchor="end" font-size="17" font-weight="600" fill="#a8a29e">01 / 02</text>
+</svg>
